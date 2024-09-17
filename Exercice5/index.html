@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Accessible</title>
+</head>
+<body>
+<header>
+    <h1>Titre de la Page</h1>
+</header>
+
+<main>
+    <p>Ceci est un paragraphe de texte.</p>
+
+    <form>
+        <div>
+            <!-- Label associé pour rendre le champ plus accessible aux lecteurs d'écran -->
+            <label for="name">Nom :</label>
+            <!-- Attribut aria-required pour indiquer que ce champ est obligatoire -->
+            <input id="name" type="text" placeholder="Entrez votre nom" aria-required="true">
+        </div>
+        <div>
+            <!-- Label associé pour rendre le champ e-mail plus accessible -->
+            <label for="email">Adresse e-mail :</label>
+            <!-- aria-required pour signaler que ce champ est requis -->
+            <input id="email" type="email" placeholder="Entrez votre adresse e-mail" aria-required="true">
+        </div>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <!-- Attribut alt pour fournir une description aux utilisateurs de lecteurs d'écran -->
+    <img src="assets/image.png" height="250" alt="Description de l'image">
+
+    <!-- Title ajouté pour donner plus de contexte à l'utilisateur sur les liens -->
+    <a href="#" title="Plus d'informations sur ce lien">Plus d'informations</a>
+    <a href="#" title="Accueil">Accueil</a>
+    <a href="#" title="Contactez-nous">Contactez-nous</a>
+</main>
+
+<footer>
+    <p>&copy; 2024 Votre Entreprise</p>
+</footer>
+</body>
+</html>
+
+
